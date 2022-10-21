@@ -28,13 +28,13 @@
       </ul>
       <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Поиск</a>
+            <a class="navigation-link" href="#"><img src="img/search.png" alt="Поиск"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
+            <a class="navigation-link" href="#"><img src="img/favorite.png" alt="Избранное"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link" href="#"><button>Хочу сюда!</button></a>
         </li>
       </ul>
     </nav>
@@ -43,11 +43,121 @@
   <main class="container">
     <section class="main-logo">
       <img src="img/welcome.svg" alt="Welcome to Sedona, becouse the Grand Canyone sucks!">
+      <img src="img/divider.svg">
     </section>
     <section class="content">
       <h2 class="content-head">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
       <p class="content-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </section>
-  </main>
+  <section class="city">
+    <div>
+        <div class="city-block">
+          <h2 class="real-city">Настоящий<br>городок</h2>
+          <p class="city-number">— №1 —</p>
+          <p class="text-city">Седона - не аттракцион для<br>туристов, тамтечёт своя<br>жизнь</p>
+        </div>
+    </div>
+    <div>
+        <img class="city-foto" src="img/photo-1.jpg" width="800" height="256" alt="Фото города">
+    </div>
+</section>
+<section class="offers">
+    <div class="block">
+        <div class="title">
+          <img src="img/advantage-icon1.svg" width="75" height="72" alt="Иконка дома">
+          <h2>Жильё</h2>
+          <p>Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
+        </div>
+        <div class="subtitle">
+          <img src="img/advantage-icon2.svg" width="75" height="70" alt="Питание">
+          <h2>Еда</h2>
+          <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+        </div>
+        <div class="block-subtitle">
+          <img src="img/advantage-icon3.svg" width="64" height="77" alt="Сувениры">
+          <h2>Сувениры</h2>
+          <p>Не только китайского,<br>но и местного<br>производства!</p>
+        </div>
+    </div>
+</section>
+<section class="devil-bridge">
+    <div>
+      <img class="images-bridge" src="img/photo-2.jpg" width="800" height="256" alt="Мост дьявола">
+    </div>
+    <div class="bridge-block">
+      <h2 class="title-bridge">там есть<br>мост дьявола</h2>
+      <p class="number-bridge">— №2 —</p>
+      <p class="text-bridge">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+     </div>
+  </section>
+  <section class="features">
+      <div class="fetures-list">
+        <div class="features-item">
+          <h2>небольшая<br>площадь</h2>
+          <p>— №3 —</p>
+          <p>все достопримечательности<br>находятся очень близко</p>
+        </div>
+        <div class="features-title">
+          <h2>красивая<br>дорога</h2>
+          <p>— №4 —</p>
+          <p>ехать в седону из лас-вегаса<br>совсем не скучно!</p>
+        </div>
+        <div class="features-subtitle">
+          <h2>мало<br>туристов</h2>
+          <p>— №5 —</p>
+          <p>большинство едет в гранд<br>каньон и толпится там</p>
+        </div>
+      </div>
+  </section>
+  <section class="search-section">
+      <div class="search-section-head">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+       <button>
+        Поиск гостиницы в Седоне
+       </button>
+      </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <section class="main-footer-subscription">
+    <h2>Подпишитесь на рассылку</h2>
+          <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+ <form class="subscription">
+<input type="email" id="email" name="email"  placeholder="Ваш e-mail" required>
+<input type="submit" value="Подписаться">
+</form>
+  </section>
+<section class="footer-contact">
+</section>
+<section class="footer-social">
+ <ul class="social">
+    <li>
+       <a class="social__button" href="#">
+          <img src="img/social1.svg" width="20" height="20" alt="Логотип twitter">
+       </a>
+    </li>
+    <li>
+       <a class="social__button" href="#">
+          <img src="img/social2.svg" width="10" height="10" alt="Логтип facebook">
+       </a>
+    </li>
+    <li>
+       <a class="social__button" href="#">
+          <img src="img/social3.svg" width="20" height="20" alt="Логотип Youtube">
+       </a>
+    </li>
+ </ul>
+</section>
+<div class="contact-tel">
+  <a class="contact-number" href="tel:+78128121212">+7(812) 812-12-12</a>
+</div>
+<section class="footer__website">
+ <a href="https://htmlacademy.ru" target="blank">
+    <img class="footer-img" src="img/academy.svg" width="115" height="41" alt="Логотип htmlacademy">
+ </a>
+</section>
+</footer>
 </body>
 </html>

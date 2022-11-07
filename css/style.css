@@ -29,6 +29,7 @@ min-height:100%;
 display: grid;
 grid-template-rows:min-content 1fr min-content;
 align-content: start;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -57,6 +58,20 @@ grid-template-rows: 1fr;
   text-transform: none;
 }
 
+.navigation-favorites::after{
+  position: absolute;
+  top:27px;
+  right:567px;
+  content: '12';
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .nav-logo {
   height: 65px;
   margin-left:70px;
@@ -70,6 +85,7 @@ color: #000;
 
 .navigation-button {
   text-transform: uppercase;
+  margin-right:70px
 }
 .content {
  background-color: #FFFFFF;

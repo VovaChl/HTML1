@@ -14,6 +14,12 @@
 .page {
 height:100%;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
 width:1200px;
 background-color: #FFFFFF;
@@ -58,24 +64,30 @@ grid-template-rows: 1fr;
   text-transform: none;
 }
 
+.navigation-favorites {
+  position: relative;
+}
+
 .navigation-favorites::after{
   position: absolute;
-  top:27px;
-  right:567px;
+  top: -8px;
+  right: -12px;
   content: '12';
+  line-height: 22px;
   width: 20px;
   height: 20px;
   background-color: #7DB54F;
   border-radius: 10px;
   font-size: 10px;
   color: #FFFFFF;
-  text-align: center;
 }
 
 .nav-logo {
+  position: relative;
   height: 65px;
   margin-left:70px;
   margin-right:47px;
+  z-index: 1;
 }
 
 .navigation-link {

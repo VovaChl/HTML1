@@ -54,26 +54,26 @@
           <a href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <h3 class="checkboxes-header">Инфраструктура:</h3>
-      <ul class="checkboxes">
-      <input type="checkbox" id="pool" checked>
-      <label for="pool">Бассейн</label>
-      <input type="checkbox" id="parking" checked>
-      <label for="parking">Парковка</label>
-      <input type="checkbox" id="wifi">
-      <label for="wifi">Wi-Fi</label>
-      </ul>
-      <h3 class="radiobuttons-header">Тип Жилья:</h3>
-      <ul class="radiobuttons">
-          <li>
-            <label><input type="radio" name="type" value="hotel"> Гостиница</label>
-          </li>
-          <li>
-            <label><input type="radio" name="type" value="motel"> Мотель</label>
-        </li>
-         <li>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset class="checkboxes">
+          <legend class="checkboxes-legend">Инфраструктура:</legend>
+          <input type="checkbox" id="pool" name="pool">
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" id="parking" name="parking">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" id="wifi" name="wifi">
+          <label for="wifi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="radiobuttons">
+          <legend class="radiobuttons-legend">Тип Жилья:</legend>
+          <label><input type="radio" name="type" value="hotel"> Гостиница</label>
+          <label><input type="radio" name="type" value="motel"> Мотель</label>
           <label><input type="radio" name="type" value="apartments"> Апартаменты</label>
-        </li>
+        </fieldset>
+
+        <input type="submit" value="Применить">
+        <input type="reset" value="Сбросить">
+      </form>
     </section>
     <section class="catalog-body">
 

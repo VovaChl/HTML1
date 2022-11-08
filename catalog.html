@@ -41,13 +41,49 @@
   </header>
 
   <main>
+    <section class="filters">
+      <h1>Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="">
+          <a href="index.html"><img src="img/union.svg" width="12" height="11.7"></a>
+        </li>
+        <li class="">
+          <img src="img/vector.svg" width="5" height="8">
+        </li>
+        <li class="">
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <h3 class="checkboxes-header">Инфраструктура:</h3>
+      <ul class="checkboxes">
+      <input type="checkbox" id="pool" checked>
+      <label for="pool">Бассейн</label>
+      <input type="checkbox" id="parking" checked>
+      <label for="parking">Парковка</label>
+      <input type="checkbox" id="wifi">
+      <label for="wifi">Wi-Fi</label>
+      </ul>
+      <h3 class="radiobuttons-header">Тип Жилья:</h3>
+      <ul class="radiobuttons">
+          <li>
+            <label><input type="radio" name="type" value="hotel"> Гостиница</label>
+          </li>
+          <li>
+            <label><input type="radio" name="type" value="motel"> Мотель</label>
+        </li>
+         <li>
+          <label><input type="radio" name="type" value="apartments"> Апартаменты</label>
+        </li>
+    </section>
+    <section class="catalog-body">
 
+    </section>
   </main>
 
   <footer class="main-footer">
-    <section class="main-footer-subscription">
-      <h2 class="subscription-header">Подпишитесь на рассылку</h2>
-      <p class="subscription-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+    <section class="catalog-footer-subscription">
+      <h2 class="subscription-header catalog-subscription-header">Подпишитесь на рассылку</h2>
+      <p class="subscription-text catalog-subscription-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
    <form class="subscription">
   <input type="email" id="email" name="email"  placeholder="Ваш e-mail" required class="subscription-email">
   <input type="submit" value="Подписаться" class="subscription-submit">

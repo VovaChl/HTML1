@@ -70,9 +70,18 @@
           <label><input type="radio" name="type" value="motel"> Мотель</label>
           <label><input type="radio" name="type" value="apartments"> Апартаменты</label>
         </fieldset>
-
+        <fieldset class="prices">
+          <legend class="prices-legend">Стоимость, 	&#8381;:</legend>
+          <input class="number" type="number" min="0" name="from" id="from">
+          <label for="from">от</label>
+          <input class="number" type="number" min="1" name="to" id="to">
+          <label for="to">до</label>
+          <input type="range" min="0" max="10" name="from-to">
+        </fieldset>
+        <fieldset class="buttons">
         <input type="submit" value="Применить">
         <input type="reset" value="Сбросить">
+       </fieldset>
       </form>
     </section>
     <section class="catalog-body">

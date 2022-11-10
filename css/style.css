@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+fieldset {
+  border:0 none;
+}
+
 body {
 width:1200px;
 background-color: #FFFFFF;
@@ -379,10 +383,133 @@ background-size: 100%;
   color: #FFFFFF;
 }
 
+.divider {
+  width: 1055px;
+  height: 0;
+  border: 1px solid #E6E6E6;
+}
 .catalog-pagination {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
+}
+
+.catalog-header {
+  color: #FFFFFF;
+  font-weight:700;
+  font-size: 60px;
+  line-height: 78px;
+  text-transform: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs-page {
+  text-transform: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.checkboxes, .prices, .radiobuttons {
+  color: #FFFFFF;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.checkboxes-legend, .prices-legend, .radiobuttons-legend {
+  font-weight: 700;
+  font-size: 20px;
+line-height: 26px;
+}
+.number {
+  width: 144px;
+  height: 48px;
+  position: relative;
+ background: none;
+ color: #FFFFFF;
+ border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance:none;
+  margin: 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  width: 288px;
+  position: absolute;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.from-slider {
+  height: 0;
+  z-index: 1;
+}
+
+.search-submit {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 13px 14px;
+  background: #82B3D3;
+  border:1px solid #82B3D3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-reset {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.number-text {
+  position: relative;
+  right: 40px;
+  opacity: 0.3;
 }

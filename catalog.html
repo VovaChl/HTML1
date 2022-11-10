@@ -42,7 +42,7 @@
 
   <main>
     <section class="filters">
-      <h1>Гостиницы Седоны</h1>
+      <h1 class="catalog-header">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="">
           <a href="index.html"><img src="img/union.svg" width="12" height="11.7"></a>
@@ -51,7 +51,7 @@
           <img src="img/vector.svg" width="5" height="8">
         </li>
         <li class="">
-          <a href="catalog.html">Гостиницы</a>
+          <a class="breadcrumbs-page" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -72,15 +72,16 @@
         </fieldset>
         <fieldset class="prices">
           <legend class="prices-legend">Стоимость, 	&#8381;:</legend>
-          <input class="number" type="number" min="0" name="from" id="from">
-          <label for="from">от</label>
-          <input class="number" type="number" min="1" name="to" id="to">
-          <label for="to">до</label>
-          <input type="range" min="0" max="10" name="from-to">
+          <input class="number" type="number" min="0" value="0" name="from" id="from">
+          <label for="from" class="number-text">от</label>
+          <input class="number" type="number" min="1" value="9000" name="to" id="to">
+          <label for="to" class="number-text">до</label>
+          <input class="from-slider" id="fromSlider" type="range" value="0" min="0" max="100"/>
+          <input class="to-slider"id="toSlider" type="range" value="80" min="0" max="100"/>
         </fieldset>
         <fieldset class="buttons">
-        <input type="submit" value="Применить">
-        <input type="reset" value="Сбросить">
+        <input type="submit" value="Применить" class="search-submit">
+        <input type="reset" value="Сбросить" class="search-reset">
        </fieldset>
       </form>
     </section>
@@ -178,8 +179,7 @@
           </div>
         </li>
         </ul>
-        <div class="divider">
-        </div>
+        <hr class="divider">
         <div class="pagination">
           <ul class="catalog-pagination">
             <li class="page-number"><a href="#" class="number-link">1</a></li>

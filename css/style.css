@@ -397,14 +397,19 @@ background-size: 100%;
 }
 
 .catalog-header {
+  padding-left: 70px;
+  padding-top: 35px;
+  margin: 0;
   color: #FFFFFF;
   font-weight:700;
   font-size: 60px;
   line-height: 78px;
   text-transform: none;
+  text-align: left;
 }
 
 .breadcrumbs {
+  padding-left: 70px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

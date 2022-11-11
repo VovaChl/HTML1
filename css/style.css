@@ -24,6 +24,7 @@ li {
 }
 
 fieldset {
+  padding: 0;
   border:0 none;
 }
 
@@ -348,12 +349,16 @@ background-size: 100%;
 }
 
 .filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 1200px;
   height: 400px;
   background: url(../img/background.jpg) no-repeat;
   backdrop-filter: blur(5px);
 }
 .search-buttons {
+  justify-self:flex-end;
   display: flex;
   gap:10px;
 }
@@ -434,13 +439,16 @@ background-size: 100%;
 }
 
 .checkboxes-legend, .prices-legend, .radiobuttons-legend {
+  margin-bottom: 30px;
+  text-align: left;
   font-weight: 700;
   font-size: 20px;
-line-height: 26px;
+  line-height: 26px;
 }
 .number {
   width: 144px;
   height: 48px;
+  padding-left: 10px;
   position: relative;
  background: none;
  color: #FFFFFF;
@@ -512,9 +520,214 @@ input[type=range]::-moz-range-thumb {
   font-size: 16px;
   line-height: 20px;
 }
-
+.number {
+  margin-right: 0;
+}
 .number-text {
   position: relative;
   right: 40px;
   opacity: 0.3;
+}
+
+.filters-list {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 70px 70px;
+  gap: 70px;
+}
+
+.checkboxes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.radiobuttons-list {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  align-items: flex-start;
+}
+
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  align-items: flex-start;
+}
+
+.buttons {
+  align-self: end;
+}
+
+.buttons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sort {
+  padding: 50px 72px 56px;
+  display: flex;
+  gap: 78px;
+  align-items: center;
+}
+
+.prices {
+  margin-left: 100px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 70px 30px;
+  align-items: center;
+}
+
+.products-page-select {
+  width: 160px;
+  height: 49px;
+  padding: 14px 20px;
+  appearance: none;
+  background: url(../img/select-vector.svg) no-repeat right;
+  background-position-x: calc(100% - 20px);
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.items-on-list {
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+gap: 94px;
+}
+
+.items-on-list-header {
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-transform: none;
+}
+
+.search-select {
+  margin-left: 113px;
+  width: 290px;
+  height: 49px;
+  padding: 14px 20px;
+  appearance: none;
+  background: url(../img/select-vector.svg) no-repeat right;
+  background-position-x: calc(100% - 20px);
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+.hotels-list {
+  padding: 0 71px 66px 73px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 18px;
+}
+.hotels-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  height: 398px;
+  padding: 20px;
+}
+
+.rating-starts {
+  width: 140px;
+  height: 37px;
+  display: flex;
+  gap:6px;
+  align-items: center;
+}
+
+.hotel-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  text-transform: none;
+  align-self: start;
+}
+
+.card-text {
+  display: flex;
+  gap:20px;
+}
+
+.card-text p {
+  margin:0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.about-hotel {
+  padding: 9px 15px 8px;
+  color: #fff;
+  width:110px;
+  background: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.add-favorite {
+  padding: 9px 15px 8px;
+  color: #fff;
+  width:140px;
+  height:37px;
+  border: #82B3D3;
+  background: #82B3D3;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.favorite {
+  background: #7DB54F;
+}
+
+.rate {
+  width: 140px;
+  height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  display: flex;
+  gap:20px;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.price-range {
+  width: 140px;
+display: flex;
+justify-content: flex-start;
+}
+
+.radio-type {
+  width: 140px;
+  display: flex;
+justify-content: flex-start;
 }

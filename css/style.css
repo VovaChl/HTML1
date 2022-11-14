@@ -329,7 +329,17 @@ background-size: 100%;
  line-height: 40px;
  font-weight: 400;
 }
+.contact-number:hover{
+  color: #756157;
+}
 
+.contact-number:focus{
+  color: #756157;
+}
+
+.contact-number:active{
+  color: rgba(117, 97, 87, 0.3);
+}
 .footer-contact {
   padding: 40px 70px 30px;
   display: grid;
@@ -859,4 +869,8 @@ height: 50px;
 
 .hidden {
   visibility: hidden;
+}
+
+.on-page {
+  border-bottom: 2px solid #756257;
 }

@@ -33,8 +33,8 @@
           <li class="navigation-item">
             <a class="navigation-link navigation-favorites" href="#"><img src="img/favorite.png"  alt="Избранное"></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-button" href="#"><button class="main-button">Хочу сюда!</button></a>
+          <li class="navigation-item navigation-button">
+            <a class="navigation-link  navigation-button header-button-link" href="#"><button class="main-button header-button">Хочу сюда!</button></a>
         </li>
       </ul>
     </nav>
@@ -121,6 +121,32 @@
       </div>
   </section>
 </main>
+  <div class="modal hidden">
+    <div class="modal-header">
+    <h2 class="modal-header-text">Поиск гостиницы в Седоне</h2>
+    <button class="header-close-modal"><img src="img/close.svg" width="13" height="13"></button>
+    </div>
+    <div class="modal-from">
+    <label for="date-from">Дата Заезда:</label>
+    <input type="date" id="date-from" class="date-from" value="2020-04-27">
+    </div>
+    <div class="modal-to">
+    <label for="date-to">Дата Выезда:</label>
+    <input type="date" id="date-to" class="date-to" value="2021-09-01">
+    </div>
+   <div class="customer">
+    <div class="customer-alult">
+    <label for="adult">Взрослые:</label>
+    <input type="number" id="adult" class="adult" value="2" min="1">
+    </div>
+    <div class="customer-chiilden">
+    <label for="children">Дети:</label>
+    <div class="info" title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</div>
+    <input type="number" id="children" class="children" value="1" min="0">
+    </div>
+   </div>
+    <button class="modal-button">Найти</button>
+  </div>
 <footer class="main-footer">
   <section class="main-footer-subscription">
     <h2 class="subscription-header">Подпишитесь на рассылку</h2>

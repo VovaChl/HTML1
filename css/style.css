@@ -480,6 +480,7 @@ border-color: #000000;
   font-size: 20px;
   line-height: 26px;
 }
+
 .input-number{
   display: flex;
   position: relative;
@@ -561,10 +562,7 @@ input[type=checkbox] + label::before {
   display: inline-block;
   width: 20px;
   height: 20px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border-radius: 0.25em;
-  margin-right: 0.5em;
+  padding-right: 19px;
   background-repeat: no-repeat;
   background-image: url(../img/checkbox.svg);
 }
@@ -591,21 +589,17 @@ input[type=radio] + label::before {
   display: inline-block;
   width: 20px;
   height: 20px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border-radius: 0.25em;
-  margin-right: 0.5em;
+  padding-right: 19px;
   background-repeat: no-repeat;
   background-image: url(../img/radio.svg);
 }
 
 input[type=radio]:checked + label::before {
   content: "";
-  display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(../img/radio-checked.svg) center no-repeat,
-                    url(../img/radio.svg) center no-repeat;
+  background: url(../img/radio-checked.svg) 5px 5px no-repeat,
+              url(../img/radio.svg) no-repeat;
 }
 
 input[type=radio]:disabled + label::before {

@@ -76,24 +76,27 @@
           <legend class="radiobuttons-legend">Тип Жилья:</legend>
           <ul class="radiobuttons-list">
           <li>
-          <label class="radiobutton"><input type="radio" name="type" value="hotel" checked> Гостиница</label>
+          <input type="radio" name="type" value="hotel" id="hotel" checked>
+          <label for="hotel" class="radiobutton">Гостиница</label>
           </li>
           <li>
-          <label class="radiobutton"><input type="radio" name="type" value="motel"> Мотель</label>
+         <input type="radio" name="type" value="motel" id="motel">
+          <label for="motel" class="radiobutton">Мотель</label>
           </li>
           <li>
-          <label class="radiobutton"><input type="radio" name="type" value="apartments"> Апартаменты</label>
+         <input type="radio" name="type" value="apartments" id="apartments">
+          <label for="apartments" class="radiobutton">Апартаменты</label>
           </li>
           </ul>
         </fieldset>
         <fieldset class="prices">
           <legend class="prices-legend">Стоимость, 	&#8381;:</legend>
           <ul class="prices-list">
-            <li>
+            <li class="input-number">
           <input class="number number-from" type="number" min="0" value="0" name="from" id="from">
-          <label for="from" class="number-text">от</label>
+          <label for="from" class="number-text-from">от</label>
           <input class="number number-to" type="number" min="1" value="9000" name="to" id="to">
-          <label for="to" class="number-text">до</label>
+          <label for="to" class="number-text-to">до</label>
          </li>
           <li>
           <input class="from-slider" id="fromSlider" type="range" value="0" min="0" max="100">

@@ -393,6 +393,9 @@ background-size: 100%;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+.active-button {
+  border-color: #000000;
+}
 .search-button:hover {
 border-color: #000000;
 }

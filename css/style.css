@@ -11,9 +11,11 @@
   font-weight: 700;
   font-style: normal;
 }
-.page {
-height:100%;
-}
+
+
+a {
+  text-decoration:none;
+  }
 
 ul {
   margin: 0;
@@ -45,9 +47,9 @@ align-content: start;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-a {
-text-decoration:none;
-}
+.page {
+  height:100%;
+  }
 
 .main-navigation{
 margin:0;

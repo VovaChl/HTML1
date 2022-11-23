@@ -44,14 +44,18 @@
     <section class="filters">
       <h1 class="catalog-header">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
-        <li class="">
-          <a href="index.html"><img src="img/union.svg" alt="home" width="12" height="12"></a>
+        <li class="crumb">
+          <a href="index.html" class="crumb">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
+            </svg>
+          </a>
         </li>
-        <li class="">
+        <li class="crumb">
           <img src="img/vector.svg" alt=">" width="5" height="8">
         </li>
-        <li class="">
-          <a class="breadcrumbs-page" href="catalog.html">Гостиницы</a>
+        <li class="crumb">
+          <a class="breadcrumbs-page crumb" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <form action="https://echo.htmlacademy.ru/courses" method="post" class="filters-list">
@@ -124,9 +128,9 @@
         <option value="high-low">Сначала дорогие</option>
       </select>
       <ul class="search-buttons">
-        <li class="search-button active-button"><a href=""><img src="img/icon-table.svg" alt="s1" width="16" height="14"></a></li>
-        <li class="search-button"><a href=""><img src="img/icon-slideshow.svg" alt="s2" width="16" height="14"></a></li>
-        <li class="search-button"><a href=""><img src="img/icon-list.svg" alt="s3" width="16" height="14"></a></li>
+        <li><a href="" class="search-button active-button"><img src="img/icon-table.svg" alt="s1" width="16" height="14"></a></li>
+        <li><a href="" class="search-button"><img src="img/icon-slideshow.svg" alt="s2" width="16" height="14"></a></li>
+        <li><a href="" class="search-button"><img src="img/icon-list.svg" alt="s3" width="16" height="14"></a></li>
       </ul>
       </div>
       <ul class="hotels-list">
@@ -162,7 +166,7 @@
           </div>
           <div class="card-buttons">
           <a href="#" class="about-hotel">Подробнее</a>
-          <button class="add-favorite favorite">В избранном</button>
+          <button class="favorite">В избранном</button>
           </div>
           <div class="rating">
           <ul class="rating-starts">
@@ -223,7 +227,7 @@
         <hr class="divider">
         <div class="pagination">
           <ul class="catalog-pagination">
-            <li class="page-number"><a href="#" class="number-link">1</a></li>
+            <li class="on-page-number"><a href="#" class="on-page-number-link">1</a></li>
             <li class="page-number"><a href="#" class="number-link">2</a></li>
             <li class="page-number"><a href="#" class="number-link">3</a></li>
             <li class="page-number"><a href="#" class="number-link">4</a></li>
@@ -253,30 +257,30 @@
     </section>
     <div class="footer-contact">
       <section class="footer-social">
-       <ul class="social">
-          <li>
-             <a class="social-button" href="https://vk.com/htmlacademy" target="blank">
-              <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Vk">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 0.948C24.2824 0.402 24.1164 0 23.3214 0H20.6964C20.0284 0 19.7204 0.347 19.5534 0.73C19.5534 0.73 18.2184 3.926 16.3274 6.002C15.7154 6.604 15.4374 6.795 15.1034 6.795C14.9364 6.795 14.6854 6.604 14.6854 6.057V0.948C14.6854 0.292 14.5014 0 13.9454 0H9.81738C9.40038 0 9.14938 0.304 9.14938 0.593C9.14938 1.214 10.0954 1.358 10.1924 3.106V6.904C10.1924 7.737 10.0394 7.888 9.70538 7.888C8.81538 7.888 6.65038 4.677 5.36538 1.003C5.11638 0.288 4.86438 0 4.19338 0H1.56638C0.816382 0 0.666382 0.347 0.666382 0.73C0.666382 1.412 1.55638 4.8 4.81138 9.281C6.98138 12.341 10.0364 14 12.8194 14C14.4884 14 14.6944 13.632 14.6944 12.997V10.684C14.6944 9.947 14.8524 9.8 15.3814 9.8C15.7714 9.8 16.4384 9.992 17.9964 11.467C19.7764 13.216 20.0694 14 21.0714 14H23.6964C24.4464 14 24.8224 13.632 24.6064 12.904C24.3684 12.18 23.5184 11.129 22.3914 9.882C21.7794 9.172 20.8614 8.407 20.5824 8.024C20.1934 7.533 20.3044 7.314 20.5824 6.877C20.5824 6.877 23.7824 2.451 24.1154 0.948H24.1164Z" fill="#83B3D3"/>
-              </svg>
-             </a>
-          </li>
-          <li>
-             <a class="social-button" href="https://t.me/htmlacademy" target="blank">
-              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Telegram">
-                <path d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z" fill="#83B3D3"/>
-              </svg>
-             </a>
-          </li>
-          <li>
-             <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="blank" >
-              <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Youtube">
-                <path d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z" fill="#83B3D3"/>
-              </svg>
-             </a>
-          </li>
-       </ul>
-      </section>
+        <ul class="social">
+           <li class="social-button">
+              <a class="social-link" href="https://vk.com/htmlacademy" target="blank">
+               <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Vk">
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 0.948C24.2824 0.402 24.1164 0 23.3214 0H20.6964C20.0284 0 19.7204 0.347 19.5534 0.73C19.5534 0.73 18.2184 3.926 16.3274 6.002C15.7154 6.604 15.4374 6.795 15.1034 6.795C14.9364 6.795 14.6854 6.604 14.6854 6.057V0.948C14.6854 0.292 14.5014 0 13.9454 0H9.81738C9.40038 0 9.14938 0.304 9.14938 0.593C9.14938 1.214 10.0954 1.358 10.1924 3.106V6.904C10.1924 7.737 10.0394 7.888 9.70538 7.888C8.81538 7.888 6.65038 4.677 5.36538 1.003C5.11638 0.288 4.86438 0 4.19338 0H1.56638C0.816382 0 0.666382 0.347 0.666382 0.73C0.666382 1.412 1.55638 4.8 4.81138 9.281C6.98138 12.341 10.0364 14 12.8194 14C14.4884 14 14.6944 13.632 14.6944 12.997V10.684C14.6944 9.947 14.8524 9.8 15.3814 9.8C15.7714 9.8 16.4384 9.992 17.9964 11.467C19.7764 13.216 20.0694 14 21.0714 14H23.6964C24.4464 14 24.8224 13.632 24.6064 12.904C24.3684 12.18 23.5184 11.129 22.3914 9.882C21.7794 9.172 20.8614 8.407 20.5824 8.024C20.1934 7.533 20.3044 7.314 20.5824 6.877C20.5824 6.877 23.7824 2.451 24.1154 0.948H24.1164Z" fill="#83B3D3"/>
+               </svg>
+              </a>
+           </li>
+           <li class="social-button">
+              <a class="social-link" href="https://t.me/htmlacademy" target="blank">
+               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Telegram">
+                 <path d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z" fill="#83B3D3"/>
+               </svg>
+              </a>
+           </li>
+           <li class="social-button">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="blank" >
+               <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Логотип Youtube">
+                 <path d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z" fill="#83B3D3"/>
+               </svg>
+              </a>
+           </li>
+        </ul>
+       </section>
       <div class="contact-tel">
         <a class="contact-number" href="tel:+78128121212">+7(812) 812-12-12</a>
       </div>

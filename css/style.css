@@ -297,6 +297,7 @@ background-size: 100%;
 }
 
 .subscription-email {
+  outline: none;
   width:600px;
   padding: 12px 15px;
   background-color: #F2F2F2;
@@ -317,14 +318,13 @@ background-size: 100%;
 
 .social {
   display: flex;
+  gap:26px;
 }
-.social-button {
-  padding-right: 26px;
+
+.social-link:hover path, .social-link:focus path{
+  fill: #68A2CA;
 }
-.social-button path:hover, .social-button path:focus{
-  fill:#68A2CA;
-}
-.social-button path:active {
+.social-link:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -343,11 +343,11 @@ background-size: 100%;
 .contact-number:active{
   color: rgba(117, 97, 87, 0.3);
 }
-.website path:hover, .website path:focus{
+.website:hover path, .website:focus path{
   fill:#756157;
 }
 
-.website path:active {
+.website:active path {
   fill:rgba(117, 97, 87, 0.3);
 }
 .footer-contact {
@@ -398,18 +398,30 @@ background-size: 100%;
 .active-button {
   border-color: #000000;
 }
-.search-button:hover {
-border-color: #000000;
-}
 
 .search-button:focus {
+  outline: none;
   border-color: #82B3D3;
   }
+
+.search-button:hover {
+    border-color: #000000;
+    }
 
 .search-button:active {
   border-color: #000000;
 }
 
+.on-page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #F2F2F2;
+  color:black;
+  border-radius: 4px;
+}
 .page-number {
   display: flex;
   justify-content: center;
@@ -417,12 +429,15 @@ border-color: #000000;
   width: 60px;
   height: 60px;
   background-color: #82B3D3;
-  border: 1px solid #82B3D3;
   border-radius: 4px;
 }
 
 .number-link{
   color: #FFFFFF;
+}
+
+.on-page-number-link {
+  color: black;
 }
 
 .divider {
@@ -815,6 +830,16 @@ text-transform: none;
 }
 
 .favorite {
+  padding: 9px 15px 8px;
+  color: #fff;
+  width:140px;
+  height:37px;
+  border: #82B3D3;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background: #7DB54F;
 }
 
@@ -982,3 +1007,45 @@ height: 50px;
 .on-page {
   border-bottom: 2px solid #756257;
 }
+
+.main-button:hover, .about-hotel:hover,.main-button:focus, .about-hotel:focus {
+  background-color: #615048;
+}
+
+.subscription-submit:hover, .search-submit:hover, .add-favorite:hover,
+.subscription-submit:focus, .search-submit:focus, .add-favorite:focus {
+  background-color: #68A2CA;
+}
+
+.favorite:hover, favorite:focus {
+  background-color: #6C9E42;
+}
+
+.main-button:active, .about-hotel:active,
+.subscription-submit:active, .search-submit:active, .add-favorite:active,
+.favorite:active {
+  color: rgba(255,255,255, 0.3);
+}
+
+.main-button:disabled, .about-hotel:disabled,
+.subscription-submit:disabled, .search-submit:disabled, .add-favorite:disabled,
+.favorite:disabled {
+  background-color: #E5E5E5;
+}
+
+.page-number:hover, .page-number:focus {
+  background-color: #68A2CA;
+}
+
+.on-page-number-link:active {
+  color:rgba(255,255,255, 0.3);
+}
+
+.crumb:hover path{
+ fill: rgba(255,255,255, 0.6);
+}
+
+.breadcrumbs-page:hover {
+  color:rgba(255,255,255, 0.6);
+}
+

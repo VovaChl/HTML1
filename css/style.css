@@ -1082,6 +1082,7 @@ input[type=radio]:checked + label::before {
 .main-button:focus,
 .about-hotel:focus {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .subscription-submit:hover,
@@ -1091,6 +1092,7 @@ input[type=radio]:checked + label::before {
 .search-submit:focus,
 .add-favorite:focus {
   background-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .favorite:hover,
